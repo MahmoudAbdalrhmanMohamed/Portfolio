@@ -1,0 +1,27 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "homeSection": {
+    "heading": "Front-End Vue Developer",
+    "paragraph": "Hi, I'm Mahmoud Abdalrahman. A passionate Front-end Vue Developer",
+    "skills": "Skills"
+  },
+  "aboutMe": {
+    "heading": "ABOUT ME",
+    "semiHeading": "Front-end Developer",
+    "paragraph": "Hey, my name is Mahmoud, and I'm a Frontend Developer.My passion is to create and develop a clean UI/UX for my users.My main stack currently is Vue.js in combination with Tailwind CSS."
+  },
+  "project": {
+    "new": "New projects are coming here"
+  },
+  "contactSection":{
+    "paragraph":"Don't be shy! Hit me up!"
+  },
+  "footer":{
+    "copyRigth":"Copyright © 2024. All rights are reserved"
+  }
+}

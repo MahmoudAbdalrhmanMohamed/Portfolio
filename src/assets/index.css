@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.routerlinkclass {
+  @apply transition duration-500 relative px-2 py-3 capitalize grid place-items-center my-2 cursor-pointer;
+}
+.routerlinkclass::before {
+  @apply content-[''] w-0 rounded-xl transition duration-500 ease-in-out absolute h-full z-[-2] dark:bg-gray-700 bg-[#3d4251];
+}
+.routerlinkclass:hover {
+  @apply md:scale-125 text-white;
+}
+.routerlinkclass:hover::before {
+  @apply w-full;
+}
+.stack-skills {
+  @apply w-16 h-16 hover:-translate-y-5 transition duration-500;
+}
+.info {
+  @apply transition duration-500 group-hover:text-blue-500;
+}
+#imageId::before {
+  @apply absolute z-30 content-[''] h-full w-0 inset-0 bg-slate-950 dark:bg-gray-600 transition duration-500;
+}
+
+#imageId:hover::before {
+  @apply w-full;
+}

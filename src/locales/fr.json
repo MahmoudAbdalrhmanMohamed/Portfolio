@@ -1,0 +1,27 @@
+{
+  "header": {
+    "home": "maison",
+    "about": "à propos",
+    "projects": "projets",
+    "contact": "contact"
+  },
+  "homeSection": {
+    "heading": "Développeur Vue Front-End",
+    "paragraph": "Bonjour, je m'appelle Mahmoud Abdalrahman. Un développeur Front-end Vue passionné",
+    "skills": "compétences"
+  },
+  "aboutMe": {
+    "heading": "SUR MOI",
+    "semiHeading": "Développeur frontal",
+    "paragraph": "Hé, je m'appelle Mahmoud et je suis un développeur Frontend. Ma passion est de créer et de développer une UI/UX propre pour mes utilisateurs. Ma pile principale est actuellement Vue.js en combinaison avec Tailwind CSS."
+  },
+  "project": {
+    "new": "De nouveaux projets arrivent ici"
+  },
+  "contactSection": {
+    "paragraph": "Ne soyez pas timide ! Battez moi!"
+  },
+  "footer": {
+    "copyRigth": "Copyright © 2024. Tous droits réservés"
+  }
+}

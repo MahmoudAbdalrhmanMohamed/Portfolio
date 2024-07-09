@@ -1,0 +1,23 @@
+
+@keyframes imageAnimation {
+  0% {
+    border-radius: 50rem 40rem 30rem 25rem;
+  }
+  40% {
+    border-radius: 30rem 45rem 30rem 30rem;
+  }
+  70% {
+    border-radius: 25rem 35rem 30rem 30rem;
+  }
+  90% {
+    border-radius: 25rem 35rem 30rem 35rem;
+  }
+  100% {
+    border-radius: 25rem 40rem 25rem 30rem;
+  }
+}
+.frontend {
+  background: linear-gradient(315deg, #42d392 25%, #647eff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
