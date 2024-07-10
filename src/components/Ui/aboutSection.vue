@@ -3,11 +3,11 @@
     id="about"
     class="aboutMe flex items-start justify-start flex-col lg:flex-row px-16 gap-16"
   >
-    <img id="img" :src="url2" class="aspect-video shadow-2xl max-h-80 rounded-lg" alt="" />
+    <img id="img" :src="url2" class="aspect-video shadow-2xl max-h-80 rounded-lg" alt="about me img" />
 
     <div id="content" class="flex flex-col gap-4 m-auto text-wrap">
-      <h3 class="text-2xl text-blue-500 font-semibold uppercase">{{ $t('aboutMe.heading') }}</h3>
-      <h4 class="text-5xl capitalize">{{ $t('aboutMe.semiHeading') }}</h4>
+      <p class="text-2xl text-blue-700 font-semibold uppercase">{{ $t('aboutMe.heading') }}</p>
+      <p class="text-5xl capitalize">{{ $t('aboutMe.semiHeading') }}</p>
       <pre class="text-gray-400 text-wrap capitalize"
         >{{ $t('aboutMe.paragraph') }}
         </pre

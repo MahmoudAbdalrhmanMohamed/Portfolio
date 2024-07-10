@@ -2,23 +2,22 @@
   <transition name="fade" appear>
     <header
       ref="headerRef"
-      class="gap-4 dark:bg-slate-900/[0.1] dark:border-slate-500 flex items-center px-2 py-3 md:py-0 rounded-b-xl top-0 sticky z-50 backdrop-blur-xl bg-transparent border-b-2 shadow-lg bg-gradient-to-r from-black/[0.2] to-white/[0.3] mx-auto"
+      class="top-0 z-50 sticky w-full gap-4 dark:bg-slate-900/[0.1] dark:border-slate-500 flex justify-start items-center px-2 py-3 md:py-0 rounded-b-xl backdrop-blur-xl bg-transparent border-b-2 shadow-lg bg-gradient-to-r from-black/[0.2] to-white/[0.3]"
     >
-      <div class="logo ml-1 mr-4" ref="logoRef">
-        <img src="./assets/images/logo.png" class="w-24 hidden md:block" alt="" />
+      <div class="logo ml-1 mr-4 hidden md:block" ref="logoRef">
+        <img src="./assets/images/logo.png" class="w-24" alt="logo img" />
       </div>
-      <transition appear name="left">
         <nav
           ref="navBar"
           class="hidden basis-10/12 text-2xl md:flex flex-col md:flex-row md:text-xl items-center gap-8 justify-start"
         >
-          <a class="routerlinkclass" href="#home">{{ $t('header.home') }}</a>
-          <a class="routerlinkclass" href="#about">{{ $t('header.about') }}</a>
-          <a class="routerlinkclass" href="#project">{{ $t('header.projects') }}</a>
-          <a class="routerlinkclass" href="#contact">{{ $t('header.contact') }}</a>
+          <a aria-label="link tag" name="link" class="routerlinkclass" href="#home">{{ $t('header.home') }}</a>
+          <a aria-label="link tag" name="link" class="routerlinkclass" href="#about">{{ $t('header.about') }}</a>
+          <a aria-label="link tag" name="link" class="routerlinkclass" href="#project">{{ $t('header.projects') }}</a>
+          <a aria-label="link tag" name="link" class="routerlinkclass" href="#contact">{{ $t('header.contact') }}</a>
         </nav>
-      </transition>
-      <div class="close_btn hidden basis-2/12 absolute top-4 right-5" ref="close">
+      
+      <div class="close_btn hidden basis-2/12 self-start" ref="close">
         <i class="fa-solid fa-xmark text-4xl cursor-pointer" @click="closeNavBar"></i>
       </div>
 
@@ -62,7 +61,8 @@ export default {
   data() {
     return {
       mode: '',
-      lang: ''
+      lang: '',
+      navShow: true
     }
   },
   components: {
@@ -161,13 +161,13 @@ export default {
 </script>
 
 <style>
-/* .fade-enter-from {
-  transform: translateY(-40px);
+.fade-enter-from,.fade-leave-to{
+transform: translateY(-100px);
 }
-.fade-enter-to {
-  transform: translateY(0);
+.fade-enter-to,.fade-leave-from{
+transform: translateY(0);
 }
-.fade-enter-active {
-  transition: 1s;
-} */
+.fade-enter-active,.fade-leave-active{
+transition: 1s;
+}
 </style>

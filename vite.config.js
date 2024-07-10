@@ -21,15 +21,29 @@ export default defineConfig({
         theme_color: '#0f172a',
         icons: [
           {
-            src: './src/assets/images/logo.png',
-            sizes: '800x329',
-            type: 'image/png'
+            src: '/512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
+          {
+            src: '/256.png',
+            sizes: '256x256',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
+          {
+            src: '/16.png',
+            sizes: '16x16',
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       },
-     workbox:{
-      globPatterns:["**/*.{js,css,html,png,jpg,}"]
-     }
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,jpg,}'],
+        sourcemap: true
+      }
     })
   ],
   resolve: {

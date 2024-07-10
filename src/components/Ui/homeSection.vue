@@ -7,18 +7,18 @@
       <transition appear @before-enter="beforeEnter">
         <div class="flex flex-col gap-4 order-2 md:order-1">
           <h1 class="text-4xl font-semibold frontend">{{ $t('homeSection.heading') }}</h1>
-          <p class="text-gray-400">
+          <p class="text-gray-600">
             {{ $t('homeSection.paragraph') }}
           </p>
           <div>
-            <a
+            <a aria-label="link tag" name="link"
               href="https://www.linkedin.com/in/mahmoud-abdalrahman-2baa81197/"
               class="text-4xl group"
               target="_blank"
             >
               <i class="fa-brands fa-linkedin info"></i>
             </a>
-            <a
+            <a aria-label="link tag" name="link"
               href="https://github.com/MahmoudAbdalrhmanMohamed"
               class="text-4xl mx-4 group"
               target="_blank"
@@ -42,14 +42,14 @@
       <div class="flex flex-col items-center justify-center gap-4">
         <p class="frontend font-bold text-4xl capitalize">{{ $t('homeSection.skills') }}</p>
         <div class="flex gap-4 flex-wrap justify-start items-start">
-          <img src="@/assets/images/html.svg" class="stack-skills"  />
-          <img src="@/assets/images/css.svg" class="stack-skills"  />
-          <img src="@/assets/images/js.svg" class="stack-skills"  />
-          <img src="@/assets/images/vue.svg" class="stack-skills"  />
-          <img src="@/assets/images/vitest.svg" class="stack-skills"  />
-          <img src="@/assets/images/pinia.svg" class="stack-skills"  />
-          <img src="@/assets/images/vite.svg" title="budle" class="stack-skills"  />
-          <img src="@/assets/images/gsap.svg" class="stack-skills" />
+          <img src="@/assets/images/html.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/css.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/js.svg" class="stack-skills"  alt="skill img"/>
+          <img src="@/assets/images/vue.svg" class="stack-skills"  alt="skill img"/>
+          <img src="@/assets/images/vitest.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/pinia.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/vite.svg" title="budle" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/gsap.svg" class="stack-skills" alt="skill img"/>
           <img
             src="@/assets/images/tailwindcss.svg"
             title="Tailindcss Styling Framework"
@@ -61,6 +61,7 @@
             src="@/assets/images/progressiveWebApps.svg"
             title="Progressive Web Apps for offline mode"
             class="stack-skills"
+            alt="skill img"
             
           />
           <img
@@ -68,6 +69,7 @@
             src="@/assets/images/progressiveWebApps_white.svg"
             title="Progressive Web Apps for offline mode"
             class="stack-skills"
+            alt="skill img"
             
           />
           <img
@@ -82,6 +84,7 @@
             src="@/assets/images/internationalization_white.svg"
             title="Internationalization for translating to multi languages"
             class="stack-skills"
+            alt="skill img"
             
           />
         </div>
