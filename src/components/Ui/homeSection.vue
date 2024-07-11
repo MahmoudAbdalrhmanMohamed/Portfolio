@@ -10,22 +10,7 @@
           <p class="text-gray-600 dark:text-gray-200">
             {{ $t('homeSection.paragraph') }}
           </p>
-          <div>
-            <a aria-label="link tag" name="link"
-              href="https://www.linkedin.com/in/mahmoud-abdalrahman-2baa81197/"
-              class="text-4xl group"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin info"></i>
-            </a>
-            <a aria-label="link tag" name="link"
-              href="https://github.com/MahmoudAbdalrhmanMohamed"
-              class="text-4xl mx-4 group"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github info"></i>
-            </a>
-          </div>
+          <iconComponent :mode="mode"/>
         </div>
       </transition>
       <transition appear name="left">
@@ -34,7 +19,7 @@
           style="animation: imageAnimation 8s alternate ease-in-out infinite"
           alt="Portfolio Image"
           id="imageId"
-          class="hover:-translate-y-16 z-10 relative bg-transparent transition duration-500 order-1 md:order-2 rounded-full w-48 border-2 border-slate-600 dark:border-gray-300 dark:bg-slate-700"
+          class="bg-transparent order-1 md:order-2 rounded-full w-48 border-2 border-slate-600 dark:border-gray-300 dark:bg-slate-700"
         />
       </transition>
     </div>
@@ -44,17 +29,16 @@
         <div class="flex gap-4 flex-wrap justify-start items-start">
           <img src="@/assets/images/html.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/css.svg" class="stack-skills" alt="skill img" />
-          <img src="@/assets/images/js.svg" class="stack-skills"  alt="skill img"/>
-          <img src="@/assets/images/vue.svg" class="stack-skills"  alt="skill img"/>
+          <img src="@/assets/images/js.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/vue.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/vitest.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/pinia.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/vite.svg" title="budle" class="stack-skills" alt="skill img" />
-          <img src="@/assets/images/gsap.svg" class="stack-skills" alt="skill img"/>
+          <img src="@/assets/images/gsap.svg" class="stack-skills" alt="skill img" />
           <img
             src="@/assets/images/tailwindcss.svg"
             title="Tailindcss Styling Framework"
             class="stack-skills"
-            
           />
           <img
             v-if="mode === 'light'"
@@ -62,7 +46,6 @@
             title="Progressive Web Apps for offline mode"
             class="stack-skills"
             alt="skill img"
-            
           />
           <img
             v-else
@@ -70,14 +53,12 @@
             title="Progressive Web Apps for offline mode"
             class="stack-skills"
             alt="skill img"
-            
           />
           <img
             v-if="mode === 'light'"
             src="@/assets/images/internationalization.svg"
             title="Internationalization for translating to multi languages"
             class="stack-skills"
-            
           />
           <img
             v-else
@@ -85,7 +66,6 @@
             title="Internationalization for translating to multi languages"
             class="stack-skills"
             alt="skill img"
-            
           />
         </div>
       </div>
@@ -95,21 +75,21 @@
 
 <script>
 import gsap from 'gsap'
+import iconComponent from './iconsComponent.vue'
 export default {
   props: ['mode'],
+  components: {
+    iconComponent
+  },
   methods: {
     beforeEnter(el) {
       gsap.from(el, {
-        duration: 1,
-        x: -100,
-        
+        x: -100
       })
     },
-    beforeEnterSkills(el){
-       gsap.from(el, {
-        duration: 1,
-        y: 100,
-        
+    beforeEnterSkills(el) {
+      gsap.from(el, {
+        y: 100
       })
     }
   }

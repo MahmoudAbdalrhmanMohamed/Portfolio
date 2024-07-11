@@ -4,26 +4,16 @@
   >
     <article class="text-3xl capitalize">{{ $t('footer.copyRigth') }}</article>
     <article>
-      <div>
-        <a aria-label="link tag" name="link"
-          href="https://www.linkedin.com/in/mahmoud-abdalrahman-2baa81197/"
-          class="text-4xl group"
-          target="_blank"
-        >
-          <i
-            class="fa-brands fa-linkedin hover:text-blue-600 hover:scale-125 transition duration-300"
-          ></i>
-        </a>
-        <a aria-label="link tag" name="link"
-          href="https://github.com/MahmoudAbdalrhmanMohamed"
-          class="text-4xl mx-4 group"
-          target="_blank"
-        >
-          <i
-            class="fa-brands fa-github hover:text-blue-600 hover:scale-125 transition duration-300"
-          ></i>
-        </a>
-      </div>
+      <iconComponent :mode="mode" />
     </article>
   </section>
 </template>
+<script>
+import iconComponent from './iconsComponent.vue'
+export default {
+  props: ['mode'],
+  components: {
+    iconComponent
+  }
+}
+</script>

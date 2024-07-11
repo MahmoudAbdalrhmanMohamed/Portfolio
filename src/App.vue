@@ -32,8 +32,9 @@
       </div>
 
       <div class="toggle_mode basis-1/12 cursor-pointer" @click="toggleModeFun" ref="mode">
-        <i class="fa-solid fa-sun text-4xl" v-if="!toggleLightIcon"></i>
-        <i class="fa-solid fa-moon text-4xl" v-else></i>
+        <img src="@/assets/images/sun.svg" class="w-8" alt="sun img" v-if="!toggleLightIcon">
+        <img src="@/assets/images/moon.svg" class="w-8" alt="sun img" v-else>
+        
       </div>
     </header>
   </transition>
@@ -46,7 +47,7 @@
 
     <contactSection />
 
-    <footerSection />
+    <footerSection :mode="mode" />
   </main>
 </template>
 
