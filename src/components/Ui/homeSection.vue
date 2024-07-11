@@ -10,7 +10,7 @@
           <p class="text-gray-600 dark:text-gray-200">
             {{ $t('homeSection.paragraph') }}
           </p>
-          <iconComponent :mode="mode"/>
+          <iconComponent :mode="mode" />
         </div>
       </transition>
       <transition appear name="left">
@@ -35,37 +35,29 @@
           <img src="@/assets/images/pinia.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/vite.svg" title="budle" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/gsap.svg" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/git.svg" class="stack-skills" alt="skill img" />
+          <img
+            src="@/assets/images/github-white.svg"
+            class="stack-skills"
+            alt="skill img"
+            v-if="mode === 'dark'"
+          />
+          <img src="@/assets/images/github.svg" class="stack-skills" alt="skill img" v-else />
           <img
             src="@/assets/images/tailwindcss.svg"
             title="Tailindcss Styling Framework"
             class="stack-skills"
           />
           <img
-            v-if="mode === 'light'"
-            src="@/assets/images/progressiveWebApps.svg"
+            src="@/assets/images/pwa.svg"
             title="Progressive Web Apps for offline mode"
             class="stack-skills"
             alt="skill img"
           />
           <img
-            v-else
-            src="@/assets/images/progressiveWebApps_white.svg"
-            title="Progressive Web Apps for offline mode"
-            class="stack-skills"
-            alt="skill img"
-          />
-          <img
-            v-if="mode === 'light'"
             src="@/assets/images/internationalization.svg"
             title="Internationalization for translating to multi languages"
             class="stack-skills"
-          />
-          <img
-            v-else
-            src="@/assets/images/internationalization_white.svg"
-            title="Internationalization for translating to multi languages"
-            class="stack-skills"
-            alt="skill img"
           />
         </div>
       </div>

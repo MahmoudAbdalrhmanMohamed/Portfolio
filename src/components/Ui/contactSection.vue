@@ -7,7 +7,7 @@
     <div class="flex flex-col md:flex-row gap-5">
       <img
         src="@/assets/images/mail.svg"
-        class="w-8"
+        class="w-8 border-1 shadow-md dark:shadow-slate-700  dark:border-salte-700 rounded-full"
         alt="mail img"
       />
 

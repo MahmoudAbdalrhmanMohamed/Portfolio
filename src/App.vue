@@ -18,11 +18,13 @@
         </nav>
       
       <div class="close_btn hidden basis-2/12 self-start" ref="close">
-        <i class="fa-solid fa-xmark text-4xl cursor-pointer" @click="closeNavBar"></i>
+        <img src="@/assets/images/close.svg" alt="close img" class="w-8 cursor-pointer" @click="closeNavBar" v-if="mode === 'light'">
+        <img src="@/assets/images/close-white.svg" alt="close img" class="w-8 cursor-pointer" @click="closeNavBar" v-else>
       </div>
 
       <div class="toggle_nav flex flex-row md:hidden basis-10/12" ref="toggle">
-        <i @click="navBarToggle" class="fa-solid fa-list text-4xl cursor-pointer"></i>
+        <img @click="navBarToggle" src="@/assets/images/menu.svg" class="w-8 cursor-pointer" alt="menu img" v-if="mode === 'light'">
+        <img @click="navBarToggle" src="@/assets/images/menu-white.svg" class="w-8 cursor-pointer" alt="menu img" v-else>
       </div>
 
       <div class="basis-1/12" ref="langRef">
