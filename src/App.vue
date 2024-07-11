@@ -45,7 +45,7 @@
 
     <projectSection />
 
-    <contactSection />
+    <contactSection :mode="mode"/>
 
     <footerSection :mode="mode" />
   </main>
