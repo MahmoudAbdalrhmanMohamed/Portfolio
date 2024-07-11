@@ -7,7 +7,7 @@
       <transition appear @before-enter="beforeEnter">
         <div class="flex flex-col gap-4 order-2 md:order-1">
           <h1 class="text-4xl font-semibold frontend">{{ $t('homeSection.heading') }}</h1>
-          <p class="text-gray-600">
+          <p class="text-gray-600 dark:text-gray-200">
             {{ $t('homeSection.paragraph') }}
           </p>
           <div>
@@ -30,7 +30,7 @@
       </transition>
       <transition appear name="left">
         <img
-          src="@/assets/images/image.png"
+          src="@/assets/images/image.webp"
           style="animation: imageAnimation 8s alternate ease-in-out infinite"
           alt="Portfolio Image"
           id="imageId"

@@ -3,7 +3,7 @@
     id="about"
     class="aboutMe flex items-start justify-start flex-col lg:flex-row px-16 gap-16"
   >
-    <img id="img" :src="url2" class="aspect-video shadow-2xl max-h-80 rounded-lg" alt="about me img" />
+    <img id="img" src="@/assets/images/about.webp" class="aspect-video shadow-2xl max-h-80 rounded-lg" alt="about me img" />
 
     <div id="content" class="flex flex-col gap-4 m-auto text-wrap">
       <p class="text-2xl text-blue-700 font-semibold uppercase">{{ $t('aboutMe.heading') }}</p>
@@ -21,7 +21,7 @@ import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const url2 = 'https://i.imghippo.com/files/BasOF1720528738.jpg'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
