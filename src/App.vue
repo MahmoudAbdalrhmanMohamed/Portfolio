@@ -5,7 +5,7 @@
       class="top-0 z-50 sticky w-full gap-4 dark:bg-slate-900/[0.1] dark:border-slate-500 flex justify-start items-center px-2 py-3 md:py-0 rounded-b-xl backdrop-blur-xl bg-transparent border-b-2 shadow-lg bg-gradient-to-r from-black/[0.2] to-white/[0.3]"
     >
       <div class="logo ml-1 mr-4 hidden md:block" ref="logoRef">
-        <img src="../public/512.png" class="w-24" alt="logo img" />
+        <img src="../public/256.png" class="h-12" alt="logo img" />
       </div>
         <nav
           ref="navBar"
