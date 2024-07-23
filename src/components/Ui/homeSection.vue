@@ -34,6 +34,7 @@
           <img src="@/assets/images/vitest.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/pinia.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/vite.svg" title="budle" class="stack-skills" alt="skill img" />
+          <img src="@/assets/images/vee-validate.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/gsap.svg" class="stack-skills" alt="skill img" />
           <img src="@/assets/images/git.svg" class="stack-skills" alt="skill img" />
           <img
